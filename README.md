@@ -27,6 +27,6 @@ To get started with this project, clone the repository and navigate to the respe
 
 ## Contact Information
 
-For any inquiries or further information, please contact:
+For any inquiries or further information, please contact me at:
 
 - **Hakan Kayan** - [kayanh@cardiff.ac.uk](mailto:kayanh@cardiff.ac.uk)
