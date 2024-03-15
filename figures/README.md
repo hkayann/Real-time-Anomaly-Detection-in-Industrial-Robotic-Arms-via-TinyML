@@ -2,7 +2,7 @@
 
 This below diagram illustrates the anomaly detection applied via a 1D-CNN model in our case.
 
-![Anomaly Detection System Setup](./figures/systemSetup2_1.png)
+![Anomaly Detection System Setup](systemSetup2_1.png)
 
 Please note: The figures utilized in my thesis can be found in the repository. They are available for reference and use; however, proper citation is requested.
 
