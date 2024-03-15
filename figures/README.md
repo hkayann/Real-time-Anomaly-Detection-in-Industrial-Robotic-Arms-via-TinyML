@@ -1,8 +1,10 @@
 ## Summary
 
-The figures utilized in my thesis can be found here. Please provide reference in case of a use.
+This below diagram illustrates the anomaly detection applied via a 1D-CNN model in our case.
 
-Please check the `systemSetup2.pdf` to see how anomaly detection via **1D-CNN** is applied in our case.
+![Anomaly Detection System Setup](./figures/systemSetup2_1.png)
+
+Please note: The figures utilized in my thesis can be found in the repository. They are available for reference and use; however, proper citation is requested.
 
 ## File Explanations
 
