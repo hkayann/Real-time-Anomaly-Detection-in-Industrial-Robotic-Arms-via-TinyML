@@ -1,0 +1,22 @@
+{
+	"name": "Tensorflow Lite for Microcontrollers (WCL)",
+	"version": "1.0.1",
+	"description": "WCL built version of TFLite for Microcontrollers. Up to date as of July 22, 2023.",
+	"repository":
+  {
+    "type": "git",
+    "url": "https://github.com/hkayann/nicla-tinyml"
+  },
+	"authors": 
+	[
+		{
+			"name": "Hakan Kayan",
+			"email": "kayanh@cardiff.ac.uk",
+			"url": "https://hkayann.github.io/",
+			"maintainer": true
+		}
+	],
+	"frameworks": "Arduino",
+  "platforms": "*",
+	"keywords": "tensorflow, tflm, tflite, lite, micro"
+}
