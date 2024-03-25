@@ -27,4 +27,4 @@ The `model.h` file must stay exactly the same unless you prefer different naming
 
 ## CC File
 
-The `model.cc` file provides the actual data and generated via the `xxd` tool. However, the generated version does not contain the standardization parameters and the parameter format is also undesired, hence requires further editing where we do via the `Python` script. 
+The `model.cc` file, generated via the `xxd` tool, provides the actual model. However, the generated version does not contain the standardization parameters and the parameter format is also undesired, hence requires further editing where we do via the `Python` script. 
