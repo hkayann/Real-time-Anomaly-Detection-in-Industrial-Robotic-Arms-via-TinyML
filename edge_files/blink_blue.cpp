@@ -5,14 +5,14 @@
 
 void setup() {
   //run this code once when Nicla Sense ME board turns on
-  nicla::begin();               // initialise library
+  nicla::begin();
   nicla::leds.begin();    
-  BHY2.begin();      // Start I2C connection
+  BHY2.begin(NICLA_BLE);
 }
 
 void loop() {
   //run this code in a loop
-  nicla::leds.setColor(blue);  //turn green LED on
+  nicla::leds.setColor(blue);  //turn blue LED on
   BHY2.update(10);
-  delay(10);                  //wait 100 seconds
+  delay(10);                  //wait 10 miliseconds
 }
