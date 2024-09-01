@@ -15,6 +15,7 @@ This repository contains the work on detecting anomalies in industrial robotic a
 | `figures/`       | Graphical figures or images used in documentation or results presentation.                       |
 | `libs/`          | Library code the project depends upon or provides, including third-party and custom libraries.  |
 | `notebooks/`     | Jupyter notebooks with code, visualizations, and narrative for data analysis and model demos.    |
+| `rtde/`          | Scripts and configurations required to run RTDE (Real-Time Data Exchange) experiments with Universal Robots, enabling real-time communication and control for the experiments.    |
 
 ## Project Overview
 
