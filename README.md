@@ -21,6 +21,10 @@ This repository contains the work on detecting anomalies in industrial robotic a
 
 This project aims to leverage the power of TinyML for real-time anomaly detection in industrial robotic arms, enhancing efficiency and safety in manufacturing environments. Utilizing the Nicla Sense ME, we develop and deploy models capable of identifying deviations from normal operations directly on the device, ensuring immediate response and minimal downtime.
 
+## Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/ShW2_ZVlFpc/0.jpg)](https://www.youtube.com/watch?v=ShW2_ZVlFpc)
+
 ## Getting Started
 
 To get started with this project, clone the repository and navigate to the respective directories to explore the scripts, datasets, and notebooks. Ensure you have the necessary dependencies installed by following the setup instructions in each directory.
