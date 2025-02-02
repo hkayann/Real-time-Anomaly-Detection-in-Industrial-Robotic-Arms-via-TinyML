@@ -39,7 +39,28 @@ This project aims to leverage the power of TinyML for real-time anomaly detectio
 
 ## Getting Started
 
-To get started with this project, clone the repository and navigate to the respective directories to explore the scripts, datasets, and notebooks. Ensure you have the necessary dependencies installed by following the setup instructions in each directory.
+### 1. Clone the Repository
+
+```sh
+git clone https://github.com/hkayann/Real-time-Anomaly-Detection-in-Industrial-Robotic-Arms-via-TinyML.git
+cd Real-time-Anomaly-Detection-in-Industrial-Robotic-Arms-via-TinyML
+```
+
+### 2. Install Dependencies
+
+You should have Python 3.8+ installed, then install the required dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+### 3. Dataset
+
+Download the dataset from Kaggle:
+
+[Industrial Robotic Arm IMU Data (CASPER-1 & CASPER-2)](https://www.kaggle.com/datasets/hkayan/industrial-robotic-arm-imu-data-casper-1-and-2)
+
+Once downloaded, extract the dataset and place it inside the `datasets/` directory.
 
 ## System Architecture for Real-Time Anomaly Detection
 
@@ -67,6 +88,30 @@ This project implements **real-time anomaly detection** in industrial robotic ar
 - The final model is deployed on **Nicla Sense ME** using **TensorFlow Lite Micro**.
 - The system integrates with **RTDE (Real-Time Data Exchange) for Universal Robots**, enabling real-time data collection and inference.
 - Over-the-air (**OTA**) firmware updates allow continuous model improvements without physical access to the device. You have to use our custom firmware to do OTA. 
+
+## Citing this Work
+
+If you use any code, datasets, or methods from this repository in your research or projects, please cite our work:
+
+```bibtex
+@article{10.1145/3670414,
+author = {Kayan, Hakan and Heartfield, Ryan and Rana, Omer and Burnap, Pete and Perera, Charith},
+title = {CASPER: Context-Aware IoT Anomaly Detection System for Industrial Robotic Arms},
+year = {2024},
+issue_date = {August 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {5},
+number = {3},
+url = {https://doi.org/10.1145/3670414},
+doi = {10.1145/3670414},
+month = aug,
+articleno = {18},
+numpages = {36},
+keywords = {Neural networks, anomaly detection, industrial robotic arms, cyber-physical systems, ubiquitous computing}
+}
+```
+
 
 ## Contact Information
 
