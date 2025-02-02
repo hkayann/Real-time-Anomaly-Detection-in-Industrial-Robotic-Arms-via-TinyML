@@ -5,6 +5,18 @@
 
 This repository contains the work on detecting anomalies in industrial robotic arms using the Nicla Sense ME for TinyML applications. It includes scripts for cloud and edge computing, datasets, datasheets, and Jupyter notebooks for data analysis and model demonstrations.
 
+## Introduction
+
+This project demonstrates real-time anomaly detection in industrial robotic arms using **TinyML** and **edge computing**. By leveraging the **Nicla Sense ME**, we developed models that detect movement-based anomalies locally on the device, ensuring minimal latency and improved safety in industrial settings.
+
+**Key Technologies Used:**
+- TinyML (TensorFlow Lite Micro)
+- Embedded Systems (Nicla Sense ME)
+- Machine Learning (1D-CNN, LSTM (performs best), XGBOOST, One-class SVM)
+- Real-Time Data Processing (RTDE with Universal Robots)
+- Over-the-Air (OTA) Updates via Bluetooth Low Energy (BLE)
+- Python (Data Processing & Model Training)
+
 ## Directory Structure
 
 | Directory        | Description                                                                                      |
