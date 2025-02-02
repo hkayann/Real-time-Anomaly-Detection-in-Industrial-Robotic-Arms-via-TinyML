@@ -2,6 +2,9 @@
 
 ![Project Status](https://img.shields.io/badge/status-active-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-yellow.svg)
+![TinyML](https://img.shields.io/badge/TinyML-powered-red.svg)
+![Nicla Sense ME](https://img.shields.io/badge/Nicla%20Sense%20ME-supported-purple.svg)
 
 This repository contains the work on detecting anomalies in industrial robotic arms using the Nicla Sense ME for TinyML applications. It includes scripts for cloud and edge computing, datasets, datasheets, and Jupyter notebooks for data analysis and model demonstrations.
 
