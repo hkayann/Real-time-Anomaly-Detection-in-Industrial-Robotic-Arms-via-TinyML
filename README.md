@@ -41,6 +41,33 @@ This project aims to leverage the power of TinyML for real-time anomaly detectio
 
 To get started with this project, clone the repository and navigate to the respective directories to explore the scripts, datasets, and notebooks. Ensure you have the necessary dependencies installed by following the setup instructions in each directory.
 
+## System Architecture for Real-Time Anomaly Detection
+
+![System Setup](figures/systemSetup.png)
+
+This project implements **real-time anomaly detection** in industrial robotic arms using **TinyML** on **Nicla Sense ME**. The system is designed to detect **joint velocity deviations** and **external disruptions (environmental or operational interference)**.
+
+### 1. Model Training & Joint Velocity Anomaly Detection
+- A **1D-CNN/LSTM model** is trained on **24 hours of non-anomalous IMU data** collected from robotic arm movements.
+- The dataset is split into **training (60%)**, **validation (20%)**, and **test (20%)** sets.
+- **Feature engineering** includes accelerometer, gyroscope, and magnetometer data processing with **Madgwick and Mahony filters**.
+- The model is optimized through **hyperparameter tuning** and evaluated using **Root Mean Square Error (RMSE)**.
+- This phase primarily focuses on detecting **joint velocity changes** to ensure the robotic arm operates within expected motion parameters.
+
+### 2. Anomaly Detection for External Disruptions
+- The trained model is deployed for real-time anomaly detection on **2 hours of anomalous IMU data**.
+- This phase identifies **external disruptions** affecting robotic performance, including:
+  - **Simulated earthquake** (environmental disturbance)
+  - **External impacts** (hitting the arm, hitting the platform)
+  - **Additional weight changes** (unexpected load variations)
+  - **Magnetic field interference** (sensor disturbances)
+- Anomalies are detected when the **RMSE exceeds a predefined threshold (TH)** to classify movements as either **normal** or **anomalous**.
+
+### 3. Real-Time Processing & Deployment
+- The final model is deployed on **Nicla Sense ME** using **TensorFlow Lite Micro**.
+- The system integrates with **RTDE (Real-Time Data Exchange) for Universal Robots**, enabling real-time data collection and inference.
+- Over-the-air (**OTA**) firmware updates allow continuous model improvements without physical access to the device. You have to use our custom firmware to do OTA. 
+
 ## Contact Information
 
 For any inquiries or further information, please contact me at:
